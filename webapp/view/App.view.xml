@@ -1,0 +1,23 @@
+<mvc:View
+   controllerName="ui5.exceltojson.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:u="sap.ui.unified"
+   displayBlock="true">
+   <!-- <Button
+      text="Say Hello"
+      press=".onShowHello"/> -->
+
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="Converting Excel data to JSON Data in UI5">
+                    <content>
+                        <u:FileUploader id="fileUploader" change="onFileUpload"/>
+                        <TextArea id="textArea" rows="10" width="100%" editable="false"/>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
